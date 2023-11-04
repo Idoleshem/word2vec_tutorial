@@ -1,3 +1,6 @@
+import torch 
+from torch import nn
+import torch.optim as optim
 
 # import function 
 from utils import (
@@ -21,7 +24,7 @@ embedding_size = 300
 
 # ----------- Data Preprocessing & Tokenization ----------------
 # text path
-text_file_path = '/content/pickle_rick_transcript.txt'
+text_file_path = 'content\pickle_rick_transcript.txt'
 tokens = preprocess_raw_text_file(text_file_path)
 
 # ----------- Generate Context-Target pairs for training -------------

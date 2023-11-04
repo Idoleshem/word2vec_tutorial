@@ -14,10 +14,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # imports relevant for skip-gram model
-import torch
-import torch.optim as optim
 from sklearn.manifold import TSNE
-from torch import nn
+
 
 
 def preprocess_raw_text_file(text_file_path):
