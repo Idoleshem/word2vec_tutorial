@@ -1,23 +1,23 @@
 # imports relevant for tokenization
-import nltk
 import string
+
+import nltk
 import numpy as np
 from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize, sent_tokenize
+from nltk.tokenize import sent_tokenize, word_tokenize
+
 nltk.download('punkt') # punctuation words '(),[].:?'
 nltk.download('stopwords') # irrelevant words such as “a” “an”
 
-# imports relevant for skip-gram model
-import torch
-from torch import nn
-import torch.optim as optim
-
 # imports relevant for visualiztion
-import matplotlib.cm as cm
 import matplotlib.pyplot as plt
-from sklearn.manifold import TSNE
 import seaborn as sns
 
+# imports relevant for skip-gram model
+import torch
+import torch.optim as optim
+from sklearn.manifold import TSNE
+from torch import nn
 
 
 def preprocess_raw_text_file(text_file_path):
